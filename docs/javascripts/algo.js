@@ -4,12 +4,7 @@ function register_calc(calc_obj, calc_fn, calc_params, calc_output) {
     })
 }
 
-function pow(params) {
-    x = parseInt(params.x.val()), y = parseInt(params.y.val()), p = parseInt(params.p.val());
-    if(!Number.isInteger(x) || !Number.isInteger(y) || !Number.isInteger(p) ||
-        x < 0 || y < 0 || p <= 0) return "参数错误";
-    if(y > 1e18 || p > 1e18) return "超出计算范围";
-    if(x > p) return "底数不能大于模数";
+function pow(x, y, p) {
     res = 1;
     while(y > 0) {
         if(y & 1) {
@@ -18,10 +13,10 @@ function pow(params) {
         x = x * x % p;
         y >>= 1;
     }
-    return String(res);
+    return res;
 }
 
-function inverse(params) {
+function inverse(x, p) {
     function exgcd(a, b) {
         if(b == 0) {
             return [a, 1, 0];
@@ -33,11 +28,7 @@ function inverse(params) {
         y = t - parseInt(a / b) * y;
         return [d, x, y];
     }
-    x = parseInt(params.x.val()), p = parseInt(params.p.val());
-    if(!Number.isInteger(x) || !Number.isInteger(p) || x < 0 || p <= 0) return "参数错误";
-    if(p > 1e18) return "超出计算范围";
-    if(x > p) return "原数不能大于模数";
     obj = exgcd(x, p);
-    if(obj[0] != 1) return "无逆元";
-    return String((obj[1] + p) % p);
+    if(obj[0] != 1) return -1;
+    return (obj[1] + p) % p;
 }

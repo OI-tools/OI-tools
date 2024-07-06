@@ -13,6 +13,13 @@
 
 <script>
 window.onload = function() {
-    register_calc($("#calc"), pow, {x: $("#input-x"), y: $("#input-y"), p: $("#input-p")}, $("#output"));
+    register_calc($("#calc"), function(params) {
+        x = parseInt(params.x.val()), y = parseInt(params.y.val()), p = parseInt(params.p.val());
+        if(!Number.isInteger(x) || !Number.isInteger(y) || !Number.isInteger(p) ||
+            x < 0 || y < 0 || p <= 0) return "参数错误";
+        if(y > 1e18 || p > 1e18) return "超出计算范围";
+        if(x > p) return "底数不能大于模数";
+        return String(pow(x, y, p));
+    }, {x: $("#input-x"), y: $("#input-y"), p: $("#input-p")}, $("#output"));
 }
 </script>

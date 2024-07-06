@@ -11,6 +11,14 @@
 
 <script>
 window.onload = function() {
-    register_calc($("#calc"), inverse, {x: $("#input-x"), p: $("#input-p")}, $("#output"));
+    register_calc($("#calc"), function(params) {
+        x = parseInt(params.x.val()), p = parseInt(params.p.val());
+        if(!Number.isInteger(x) || !Number.isInteger(p) || x < 0 || p <= 0) return "参数错误";
+        if(p > 1e18) return "超出计算范围";
+        if(x > p) return "原数不能大于模数";
+        inv = inverse(x, p);
+        if(inv == -1) return "无逆元";
+        return String(inv);
+    }, {x: $("#input-x"), p: $("#input-p")}, $("#output"));
 }
 </script>
