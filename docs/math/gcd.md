@@ -14,10 +14,9 @@
 <script>
 window.onload = function() {
     register_calc($("#calc"), function(params) {
-        a = parseInt(params.a.val()), b = parseInt(params.b.val());
-        if(!Number.isInteger(a) || !Number.isInteger(b) ||
-            a <= 0 || b <= 0) return "参数错误";
-        if(a > Number.MAX_SAFE_INTEGER || b > Number.MAX_SAFE_INTEGER) return "超出计算范围";
+        a = BigInt(params.a.val()), b = BigInt(params.b.val());
+        if(a <= 0 || b <= 0) return "参数错误";
+        if(a > 1e18 || b > 1e18) return "超出计算范围";
         return String(gcd(a, b));
     }, {a: $("#input-a"), b: $("#input-b")}, $("#output"));
 }

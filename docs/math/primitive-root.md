@@ -12,9 +12,9 @@
 <script>
 window.onload = function() {
     register_calc($("#calc"), function(params) {
-        p = parseInt(params.p.val());
-        if(!Number.isInteger(p) || p <= 0) return "参数错误";
-        if(p > Number.MAX_SAFE_INTEGER) return "超出计算范围";
+        p = BigInt(params.p.val());
+        if(p <= 0) return "参数错误";
+        if(p > 1e18) return "超出计算范围";
         return "[TODO]作者很懒，还没有写代码";
     }, {p: $("#input-p")}, $("#output"));
 }

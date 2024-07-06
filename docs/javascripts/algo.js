@@ -5,13 +5,13 @@ function register_calc(calc_obj, calc_fn, calc_params, calc_output) {
 }
 
 function pow(a, b, p) {
-    res = 1;
+    res = BigInt(1);
     while(b > 0) {
-        if(b & 1) {
+        if(b % BigInt(2) == BigInt(1)) {
             res = res * a % p;
         }
         a = a * a % p;
-        b >>= 1;
+        b /= BigInt(2);
     }
     return res;
 }
@@ -25,57 +25,57 @@ function gcd(a, b) {
 
 function exgcd(a, b) {
     if(b == 0) {
-        return {d: a, x: 1, y: 0};
+        return {d: a, x: BigInt(1), y: BigInt(0)};
     }
     obj = exgcd(b, a % b);
     d = obj.d, x = obj.x, y = obj.y;
     t = x;
     x = y;
-    y = t - parseInt(a / b) * y;
+    y = t - BigInt(a / b) * y;
     return {d, x, y};
 }
 
-function inv(a, p) {
+function inverse(a, p) {
     obj = exgcd(a, p);
     if(obj.d != 1) return -1;
     return (obj.x + p) % p;
 }
 
 function phi(n) {
-    phi = n;
-    for(i = 2; i * i <= n; i ++) {
+    res = n;
+    for(i = BigInt(2); i * i <= n; i ++) {
         if(n % i == 0) {
             while(n % i == 0) {
                 n /= i;
             }
-            phi -= phi / i;
+            res -= res / i;
         }
     }
 
     if(n > 1) {
-        phi -= phi / n;
+        res -= res / n;
     }
 
-    return phi;
+    return res;
 }
 
 function mu(n) {
-    mu = 1;
-    for(i = 2; i * i <= n; i ++) {
+    res = BigInt(1);
+    for(i = BigInt(2); i * i <= n; i ++) {
         if(n % i == 0) {
             n /= i;
-            mu *= -1;
+            res *= BigInt(-1);
             if(n % i == 0) {
-                mu = 0;
+                res = BigInt(0);
             }
         }
     }
 
     if(n > 1) {
-        mu *= -1;
+        res *= BigInt(-1);
     }
 
-    return mu;
+    return res;
 }
 
 function get_primitive_roots(p) {
