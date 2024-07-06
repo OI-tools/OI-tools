@@ -35,13 +35,13 @@ function exgcd(a, b) {
     return {d, x, y};
 }
 
-function inverse(a, p) {
+function inv(a, p) {
     obj = exgcd(a, p);
     if(obj.d != 1) return -1;
     return (obj.x + p) % p;
 }
 
-function get_phi(n) {
+function phi(n) {
     phi = n;
     for(i = 2; i * i <= n; i ++) {
         if(n % i == 0) {
@@ -59,7 +59,7 @@ function get_phi(n) {
     return phi;
 }
 
-function get_mu(n) {
+function mu(n) {
     mu = 1;
     for(i = 2; i * i <= n; i ++) {
         if(n % i == 0) {
@@ -76,4 +76,8 @@ function get_mu(n) {
     }
 
     return mu;
+}
+
+function get_primitive_roots(p) {
+    g = [];
 }

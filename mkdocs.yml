@@ -43,6 +43,7 @@ nav:
     - 模意义下的乘法逆元 inverse: math/inverse.md
     - 欧拉函数 phi: math/phi.md
     - 莫比乌斯函数 mu: math/mu.md
+    - 原根 primitive root: math/primitive-root.md
   
 plugins:
   - search:

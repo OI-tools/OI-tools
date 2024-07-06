@@ -18,7 +18,7 @@ window.onload = function() {
         if(!Number.isInteger(a) || !Number.isInteger(p) || a < 0 || p <= 0) return "参数错误";
         if(p > Number.MAX_SAFE_INTEGER) return "超出计算范围";
         if(a > p) return "原数不能大于模数";
-        inv = inverse(a, p);
+        inv = inv(a, p);
         if(inv == -1) return "无逆元";
         return String(inv);
     }, {a: $("#input-a"), p: $("#input-p")}, $("#output"));

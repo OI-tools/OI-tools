@@ -15,7 +15,7 @@ window.onload = function() {
         a = parseInt(params.a.val());
         if(!Number.isInteger(a)|| a < 0) return "参数错误";
         if(a > Number.MAX_SAFE_INTEGER) return "超出计算范围";
-        return String(get_mu(a));
+        return String(mu(a));
     }, {a: $("#input-a")}, $("#output"));
 }
 </script>
