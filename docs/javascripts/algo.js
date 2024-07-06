@@ -5,13 +5,13 @@ function register_calc(calc_obj, calc_fn, calc_params, calc_output) {
 }
 
 function pow(a, b, p) {
-    res = BigInt(1);
+    res = 1n
     while(b > 0) {
-        if(b % BigInt(2) == BigInt(1)) {
+        if(b % 2n == 1n) {
             res = res * a % p;
         }
         a = a * a % p;
-        b /= BigInt(2);
+        b /= 2n;
     }
     return res;
 }
@@ -25,34 +25,34 @@ function gcd(a, b) {
 
 function exgcd(a, b) {
     if(b == 0) {
-        return {d: a, x: BigInt(1), y: BigInt(0)};
+        return {d: a, x: 1n, y: 0n};
     }
     obj = exgcd(b, a % b);
     d = obj.d, x = obj.x, y = obj.y;
     t = x;
     x = y;
-    y = t - BigInt(a / b) * y;
+    y = t - a / b * y;
     return {d, x, y};
 }
 
 function inverse(a, p) {
     obj = exgcd(a, p);
-    if(obj.d != 1) return -1;
+    if(obj.d != 1n) return -1n;
     return (obj.x + p) % p;
 }
 
 function phi(n) {
     res = n;
-    for(i = BigInt(2); i * i <= n; i ++) {
-        if(n % i == 0) {
-            while(n % i == 0) {
+    for(i = 2n; i * i <= n; i ++) {
+        if(n % i == 0n) {
+            while(n % i == 0n) {
                 n /= i;
             }
             res -= res / i;
         }
     }
 
-    if(n > 1) {
+    if(n > 1n) {
         res -= res / n;
     }
 
@@ -60,22 +60,36 @@ function phi(n) {
 }
 
 function mu(n) {
-    res = BigInt(1);
-    for(i = BigInt(2); i * i <= n; i ++) {
-        if(n % i == 0) {
+    res = 1n;
+    for(i = 2n; i * i <= n; i ++) {
+        if(n % i == 0n) {
             n /= i;
-            res *= BigInt(-1);
-            if(n % i == 0) {
-                res = BigInt(0);
+            res *= -1n;
+            if(n % i == 0n) {
+                res = 0n;
             }
         }
     }
 
-    if(n > 1) {
-        res *= BigInt(-1);
+    if(n > 1n) {
+        res *= -1n;
     }
 
     return res;
+}
+
+function get_primes(n) {
+    primes = [];
+    is_prime = new Array(n + 1n).fill(true);
+    for(i = 2n; i <= n; i ++) {
+        if(is_prime[i]) {
+            primes.push(i);
+        }
+        for(j = 0n; j < primes.length && i * primes[j] <= n; j ++) {
+            is_prime[i * primes[j]] = false;
+        }
+    }
+    return primes;
 }
 
 function get_primitive_roots(p) {
