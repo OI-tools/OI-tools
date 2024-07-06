@@ -40,3 +40,40 @@ function inverse(a, p) {
     if(obj.d != 1) return -1;
     return (obj.x + p) % p;
 }
+
+function get_phi(n) {
+    phi = n;
+    for(i = 2; i * i <= n; i ++) {
+        if(n % i == 0) {
+            while(n % i == 0) {
+                n /= i;
+            }
+            phi -= phi / i;
+        }
+    }
+
+    if(n > 1) {
+        phi -= phi / n;
+    }
+
+    return phi;
+}
+
+function get_mu(n) {
+    mu = 1;
+    for(i = 2; i * i <= n; i ++) {
+        if(n % i == 0) {
+            n /= i;
+            mu *= -1;
+            if(n % i == 0) {
+                mu = 0;
+            }
+        }
+    }
+
+    if(n > 1) {
+        mu *= -1;
+    }
+
+    return mu;
+}

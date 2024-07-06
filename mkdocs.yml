@@ -41,6 +41,8 @@ nav:
     - 拓展欧几里得算法 exgcd: math/exgcd.md
     - 模意义下的快速幂 pow: math/pow.md
     - 模意义下的乘法逆元 inverse: math/inverse.md
+    - 欧拉函数 phi: math/phi.md
+    - 莫比乌斯函数 mu: math/mu.md
   
 plugins:
   - search:
