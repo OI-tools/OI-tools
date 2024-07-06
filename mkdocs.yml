@@ -45,7 +45,6 @@ nav:
 plugins:
   - search:
       lang: zh
-      jieba_dict: dict.txt
         
 markdown_extensions:
   - attr_list
