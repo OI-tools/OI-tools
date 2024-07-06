@@ -80,18 +80,70 @@ function mu(n) {
 
 function get_primes(n) {
     primes = [];
-    is_prime = new Array(n + 1n).fill(true);
+    isprime = new Array(Number(n + 1n)).fill(true);
     for(i = 2n; i <= n; i ++) {
-        if(is_prime[i]) {
+        if(isprime[i]) {
             primes.push(i);
         }
         for(j = 0n; j < primes.length && i * primes[j] <= n; j ++) {
-            is_prime[i * primes[j]] = false;
+            isprime[i * primes[j]] = false;
         }
     }
     return primes;
 }
 
-function get_primitive_roots(p) {
-    g = [];
+function is_prime(n) {
+    for(i = 2n; i * i <= n; i ++) {
+        if(n % i == 0n) {
+            return false;
+        }
+    }
+    return n > 1n;
+}
+
+function get_primitive_root(p) {
+    function exist_primitive_root(primes, p) {
+        if(p == 2n || p == 4n) return true;
+        if(p % 2n == 0n) p /= 2n;
+        if(is_prime(p)) return true;
+        for(i = 2n; i < primes.length && primes[i] * primes[i] <= p; i ++) {
+            if(p % primes[i] == 0n) {
+                while(p % primes[i] == 0n) p /= primes[i];
+                return p == 1n;
+            }
+        }
+        return false;
+    }
+    factors = [];
+    primes = get_primes(100000n);
+    if(!exist_primitive_root(primes, p)) return -1n;
+    temp = phi(p);
+    phip = phi(p);
+    for(i = 0n; i < primes.length && primes[i] * primes[i] <= temp; i ++) {
+        if(temp % primes[i] == 0n) {
+            factors.push(phip / primes[i]);
+            while(temp % primes[i] == 0n) temp /= primes[i];
+        }
+    }
+
+    if(temp > 1n) {
+        factors.push(phip / temp);
+    }
+
+    root = -1n;
+    for(i = 1n; i < p; i ++) {
+        is_root = true;
+        if(pow(i, phip, p) != 1n) continue;
+        for(j = 0n; j < factors.length; j ++) {
+            if(pow(i, factors[j], p) == 1n) {
+                is_root = false;
+                break;
+            }
+        }
+        if(is_root) {
+            root = i;
+            break;
+        }
+    }
+    return root;
 }
