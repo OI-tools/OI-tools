@@ -4,31 +4,39 @@ function register_calc(calc_obj, calc_fn, calc_params, calc_output) {
     })
 }
 
-function pow(x, y, p) {
+function pow(a, b, p) {
     res = 1;
-    while(y > 0) {
-        if(y & 1) {
-            res = res * x % p;
+    while(b > 0) {
+        if(b & 1) {
+            res = res * a % p;
         }
-        x = x * x % p;
-        y >>= 1;
+        a = a * a % p;
+        b >>= 1;
     }
     return res;
 }
 
-function inverse(x, p) {
-    function exgcd(a, b) {
-        if(b == 0) {
-            return [a, 1, 0];
-        }
-        obj = exgcd(b, a % b);
-        d = obj[0], x = obj[1], y = obj[2];
-        t = x;
-        x = y;
-        y = t - parseInt(a / b) * y;
-        return [d, x, y];
+function gcd(a, b) {
+    if(b == 0) {
+        return a;
     }
-    obj = exgcd(x, p);
-    if(obj[0] != 1) return -1;
-    return (obj[1] + p) % p;
+    return gcd(b, a % b);
+}
+
+function exgcd(a, b) {
+    if(b == 0) {
+        return {d: a, x: 1, y: 0};
+    }
+    obj = exgcd(b, a % b);
+    d = obj.d, x = obj.x, y = obj.y;
+    t = x;
+    x = y;
+    y = t - parseInt(a / b) * y;
+    return {d, x, y};
+}
+
+function inverse(a, p) {
+    obj = exgcd(a, p);
+    if(obj.d != 1) return -1;
+    return (obj.x + p) % p;
 }

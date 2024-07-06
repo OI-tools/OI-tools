@@ -1,10 +1,10 @@
-# 模意义下的乘法逆元
+# 模意义下的乘法逆元（inverse）
 
-计算 $\dfrac{1}{x} \bmod p$。
+计算 $\dfrac{1}{a} \bmod p$。
 
 <div class="grid cards" id="calc" markdown>
 - 输入
-    <input class="md-input md-input--stretch" id="input-x" type="number" placeholder="原数">
+    <input class="md-input md-input--stretch" id="input-a" type="number" placeholder="原数">
     <br><br>
     <input class="md-input md-input--stretch" id="input-p" type="number" placeholder="模数">
 - 输出
@@ -14,13 +14,13 @@
 <script>
 window.onload = function() {
     register_calc($("#calc"), function(params) {
-        x = parseInt(params.x.val()), p = parseInt(params.p.val());
-        if(!Number.isInteger(x) || !Number.isInteger(p) || x < 0 || p <= 0) return "参数错误";
+        a = parseInt(params.a.val()), p = parseInt(params.p.val());
+        if(!Number.isInteger(a) || !Number.isInteger(p) || a < 0 || p <= 0) return "参数错误";
         if(p > 1e18) return "超出计算范围";
-        if(x > p) return "原数不能大于模数";
-        inv = inverse(x, p);
+        if(a > p) return "原数不能大于模数";
+        inv = inverse(a, p);
         if(inv == -1) return "无逆元";
         return String(inv);
-    }, {x: $("#input-x"), p: $("#input-p")}, $("#output"));
+    }, {a: $("#input-a"), p: $("#input-p")}, $("#output"));
 }
 </script>

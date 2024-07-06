@@ -37,8 +37,10 @@ theme:
 nav:
   - 首页: index.md
   - 数学:
-    - 模意义下的快速幂: math/pow.md
-    - 模意义下的乘法逆元: math/inverse.md
+    - 欧几里得算法（gcd）: math/gcd.md
+    - 拓展欧几里得算法（exgcd）: math/exgcd.md
+    - 模意义下的快速幂（pow）: math/pow.md
+    - 模意义下的乘法逆元（inverse）: math/inverse.md
         
 markdown_extensions:
   - attr_list
