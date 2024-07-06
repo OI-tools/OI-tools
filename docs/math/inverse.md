@@ -1,4 +1,4 @@
-# 模意义下的乘法逆元（inverse）
+# 模意义下的乘法逆元 inverse
 
 计算 $\dfrac{1}{a} \bmod p$。
 

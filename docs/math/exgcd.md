@@ -1,4 +1,4 @@
-# 拓展欧几里得算法（exgcd）
+# 拓展欧几里得算法 exgcd
 
 计算 $ax+by=gcd(a,b)$ 的 $\gcd(a,b)$、$x$ 和 $y$ 的值。
 
