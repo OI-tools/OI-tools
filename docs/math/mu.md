@@ -14,7 +14,7 @@ window.onload = function() {
     register_calc($("#calc"), function(params) {
         a = BigInt(params.a.val());
         if(a < 0) return "参数错误";
-        if(a > 1e18) return "超出计算范围";
+        if(a > 1e15) return "超出计算范围";
         return String(mu(a));
     }, {a: $("#input-a")}, $("#output"));
 }
