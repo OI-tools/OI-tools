@@ -1,5 +1,7 @@
 # 模意义下的快速幂
 
+计算 $x^y \bmod p$。
+
 <div class="grid cards" id="calc" markdown>
 - 输入
     <input class="md-input md-input--stretch" id="input-x" type="number" placeholder="底数">

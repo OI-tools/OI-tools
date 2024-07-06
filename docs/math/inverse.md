@@ -1,5 +1,7 @@
 # 模意义下的乘法逆元
 
+计算 $\dfrac{1}{x} \bmod p$。
+
 <div class="grid cards" id="calc" markdown>
 - 输入
     <input class="md-input md-input--stretch" id="input-x" type="number" placeholder="原数">
