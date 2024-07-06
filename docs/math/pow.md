@@ -21,6 +21,7 @@ window.onload = function() {
             a < 0 || b < 0 || p <= 0) return "参数错误";
         if(b > 1e18 || p > 1e18) return "超出计算范围";
         if(a > p) return "底数不能大于模数";
+        a %= p;
         return String(pow(a, b, p));
     }, {a: $("#input-a"), b: $("#input-b"), p: $("#input-p")}, $("#output"));
 }
