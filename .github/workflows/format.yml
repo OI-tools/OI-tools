@@ -30,6 +30,7 @@ jobs:
         continue-on-error: true
         
       - name: Create Pull Request
+        if: git diff
         uses: peter-evans/create-pull-request@v4
         with:
           title: '[Bot] Automated PR to fix formatting errors'
