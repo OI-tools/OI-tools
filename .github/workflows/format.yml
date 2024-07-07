@@ -24,6 +24,7 @@ jobs:
  
       - name: Check Format
         id: format
+        continue-on-error: true
         run: git diff --exit-code
       
       - name: Create Pull Request
