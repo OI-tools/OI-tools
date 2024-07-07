@@ -3,12 +3,17 @@
 <!-- PROJECT SHIELDS -->
 
 <p align="center">
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+  <a href="https://github.com/ZnPdCo/OI-tools">
+    <img alt="GitHub followers" src="https://img.shields.io/github/followers/ZnPdCo.svg?style=flat-square"></a>
+  <a href="https://github.com/ZnPdCo/OI-tools">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/ZnPdCo/OI-tools.svg?style=flat-square"></a>
+  <a href="https://github.com/ZnPdCo/OI-tools">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/ZnPdCo/OI-tools.svg?style=flat-square"></a>
+  <a href="https://github.com/ZnPdCo/OI-tools">
+    <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/ZnPdCo/OI-tools.svg?style=flat-square"></a>
+  <br/>
+  <a href="https://github.com/ZnPdCo/OI-tools">
+    <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"></a>
 </p>
 
 <!-- PROJECT LOGO -->
@@ -78,3 +83,6 @@ python2 -m SimpleHTTPServer
 # 有些环境下找不到名叫 python3/python2 的可执行文件，不妨运行 python 试试
 ```
 
+### 版权声明
+
+除特别注明外，项目中除了代码部分均采用 GPL-3.0 许可证。
