@@ -10,6 +10,8 @@ edit_uri: edit/main/docs/
 copyright: 'Copyright &copy; 2024 - 2024 ZnPdCo'
 
 theme:
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
   features:
     - navigation.tabs
     - search.suggest
@@ -83,7 +85,11 @@ markdown_extensions:
       generic: true
 
 extra_javascript:
-  - javascripts/mathjax.js
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/katex.js
+  - assets/katex/katex.min.js
+  - assets/katex/contrib/auto-render.min.js
   - javascripts/algo.js
-  - https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js
+  - assets/jquery/jquery.min.js
+
+extra_css:
+  - assets/katex/katex.min.css
