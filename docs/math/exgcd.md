@@ -1,6 +1,6 @@
 # 拓展欧几里得算法 exgcd
 
-计算 $ax+by=gcd(a,b)$ 的 $\gcd(a,b)$、$x$ 和 $y$ 的值。
+计算 $ax+by=\gcd(a,b)$ 的 $\gcd(a,b)$、$x$ 和 $y$ 的值。
 
 <div class="grid cards" id="calc" markdown>
 - 输入

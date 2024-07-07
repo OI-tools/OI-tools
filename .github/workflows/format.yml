@@ -17,10 +17,16 @@ jobs:
           check-latest: true
 
       - name: Install remark
-        run: npm install remark-cli remark-preset-lint-consistent remark-preset-lint-recommended remark-toc --save-dev --global
+        run: npm install remark-cli remark-preset-lint-consistent remark-preset-lint-recommended remark-toc --global
  
       - name: Run remark
-        run: remark docs -o
+        run: find . "./docs/assets" -prune -o -type f -name "*.md" -print0 | xargs -0 remark -o
+
+      - name: Install js-beautify
+        run: npm install js-beautify --global
+
+      - name: Run js-beautify
+        run: find . "./docs/assets" -prune -o -type f -name "*.js" -print0 | xargs -0 js-beautify -o
  
       - name: Check Format
         id: format
