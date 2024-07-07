@@ -1,14 +1,16 @@
 name: Code Format
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
 jobs:
   format:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Checkout PR
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh pr checkout ${{ github.event.pull_request.number }}
 
       - uses: actions/setup-node@v4
         name: Setup Node.js
@@ -30,17 +32,13 @@ jobs:
         id: format
         run: git diff --exit-code
 
-      - name: Create Pull Request
+      - name: Push changes
+        env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: failure()
-        uses: peter-evans/create-pull-request@v6
-        with:
-          commit-message: "[Bot] format"
-          title: "[Bot] Auto format"
-          branch: bot/format
-          delete-branch: true
-          labels: |
-            bot
-            format
-          draft: false
-          body: |
-            This PR is created by a bot to format in the repository.
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git commit -m "format" -a
+          git push
+          
