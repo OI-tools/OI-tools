@@ -2,14 +2,12 @@
 
 <!-- PROJECT SHIELDS -->
 
-<p align="center">
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-</p>
 
 <!-- PROJECT LOGO -->
 <br />
@@ -77,4 +75,3 @@ python3 -m http.server
 python2 -m SimpleHTTPServer
 # 有些环境下找不到名叫 python3/python2 的可执行文件，不妨运行 python 试试
 ```
-
