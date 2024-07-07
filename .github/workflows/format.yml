@@ -24,11 +24,10 @@ jobs:
  
       - name: Check Format
         id: format
-        continue-on-error: true
         run: git diff --exit-code
       
       - name: Create Pull Request
-        if: ${{steps.format.conclusion == 'failure'}}
+        if: failure()
         uses: peter-evans/create-pull-request@v6
         with:
           commit-message: '[Bot] format'
