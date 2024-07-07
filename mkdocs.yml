@@ -7,7 +7,7 @@ repo_name: OI-tools
 repo_url: https://github.com/ZnPdCo/OI-tools
 edit_uri: edit/main/docs/
 
-copyright: 'Copyright &copy; 2024 - 2024 ZnPdCo'
+copyright: "Copyright &copy; 2024 - 2024 ZnPdCo"
 
 theme:
   logo: assets/logo.svg
@@ -39,18 +39,18 @@ theme:
 nav:
   - 首页: index.md
   - 数学:
-    - 欧几里得算法 gcd: math/gcd.md
-    - 拓展欧几里得算法 exgcd: math/exgcd.md
-    - 模意义下的快速幂 pow: math/pow.md
-    - 模意义下的乘法逆元 inverse: math/inverse.md
-    - 欧拉函数 phi: math/phi.md
-    - 莫比乌斯函数 mu: math/mu.md
-    - 原根 primitive root: math/primitive-root.md
-  
+      - 欧几里得算法 gcd: math/gcd.md
+      - 拓展欧几里得算法 exgcd: math/exgcd.md
+      - 模意义下的快速幂 pow: math/pow.md
+      - 模意义下的乘法逆元 inverse: math/inverse.md
+      - 欧拉函数 phi: math/phi.md
+      - 莫比乌斯函数 mu: math/mu.md
+      - 原根 primitive root: math/primitive-root.md
+
 plugins:
   - search:
       lang: zh
-        
+
 markdown_extensions:
   - attr_list
   - md_in_html
