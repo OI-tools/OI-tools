@@ -1,0 +1,5 @@
+docs/assets
+**/.git
+**/.svn
+**/.hg
+**/node_modules
