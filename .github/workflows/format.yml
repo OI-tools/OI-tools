@@ -22,29 +22,21 @@ jobs:
       - name: Run remark
         run: remark docs -o
  
-      - name: Check format
+      - name: Check Format
+        id: format
         run: git diff --exit-code
-        continue-on-error: true
-
-      - name: Commit files
-        run: |
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -a -m 'Automated format update'
       
       - name: Create Pull Request
-        if: ${{ failure() }}
-        uses: peter-evans/create-pull-request@v4
+        if: ${{steps.format.conclusion == 'failure'}}
+        uses: peter-evans/create-pull-request@v6
         with:
-          title: '[Bot] Automated PR to fix formatting'
-          committer: GitHub <noreply@github.com>
-          author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-          assignees: ZnPdCo
-          reviewers: ZnPdCo
-          branch: t/bot/fix-codeformatting
+          commit-message: '[Bot] format'
+          title: '[Bot] Auto format'
+          branch: bot/format
           delete-branch: true
-          labels: bot
-          base: main
+          labels: |
+            bot
+            format
           draft: false
           body: |
-            This PR is created by a bot to fix formatting in the repository.
+            This PR is created by a bot to format in the repository.
