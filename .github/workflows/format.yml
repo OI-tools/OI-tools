@@ -28,9 +28,12 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -a -m 'Automated format update'
         continue-on-error: true
-        
+      
+      - name: Check format
+        run: git diff --exit-code
+      
       - name: Create Pull Request
-        if: steps.format.outputs.files_changed == 'true'
+        if: ${{ failure() }}
         uses: peter-evans/create-pull-request@v4
         with:
           title: '[Bot] Automated PR to fix formatting'
