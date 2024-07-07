@@ -1,6 +1,6 @@
 # 模意义下的乘法逆元 inverse
 
-计算 $\dfrac{1}{a} \bmod p$。
+计算 $\\dfrac{1}{a} \\bmod p$。
 
 <div class="grid cards" id="calc" markdown>
 - 输入

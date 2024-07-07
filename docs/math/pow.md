@@ -1,6 +1,6 @@
 # 模意义下的快速幂 pow
 
-计算 $a^b \bmod p$。
+计算 $a^b \\bmod p$。
 
 <div class="grid cards" id="calc" markdown>
 - 输入

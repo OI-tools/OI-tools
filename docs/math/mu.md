@@ -1,6 +1,6 @@
 # 莫比乌斯函数 mu
 
-计算 $\mu(a)$。
+计算 $\\mu(a)$。
 
 <div class="grid cards" id="calc" markdown>
 - 输入

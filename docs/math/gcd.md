@@ -1,6 +1,6 @@
 # 欧几里得算法 gcd
 
-计算 $\gcd(a, b)$。
+计算 $\\gcd(a, b)$。
 
 <div class="grid cards" id="calc" markdown>
 - 输入

@@ -1,6 +1,6 @@
 # 欧拉函数 phi
 
-计算 $\varphi(a)$。
+计算 $\\varphi(a)$。
 
 <div class="grid cards" id="calc" markdown>
 - 输入
