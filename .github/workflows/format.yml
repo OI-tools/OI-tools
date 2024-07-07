@@ -30,14 +30,20 @@ jobs:
         continue-on-error: true
         
       - name: Create Pull Request
-        if: ${{ git diff }}
+        if: steps.format.outputs.files_changed == 'true'
         uses: peter-evans/create-pull-request@v4
         with:
-          title: '[Bot] Automated PR to fix formatting errors'
+          title: '[Bot] Automated PR to fix formatting'
           body: |
-            Automated PR to fix formatting errors
+            Automated PR to fix formatting
           committer: GitHub <noreply@github.com>
           author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           assignees: ZnPdCo
           reviewers: ZnPdCo
           branch: t/bot/fix-codeformatting
+          delete-branch: true
+          labels: bot
+          base: main
+          draft: false
+          body: |
+            This PR is created by a bot to fix formatting in the repository.
