@@ -1,10 +1,10 @@
 site_name: OI Tools
 site_description: OI Tools 是一个编程竞赛工具箱
 site_author: ZnPdCo
-site_url: https://znpdco.github.io/OI-tools/
+site_url: https://oi-tools.github.io/OI-tools/
 
 repo_name: OI-tools
-repo_url: https://github.com/ZnPdCo/OI-tools
+repo_url: https://github.com/OI-tools/OI-tools
 edit_uri: edit/main/docs/
 
 copyright: "Copyright &copy; 2024 - 2024 ZnPdCo"

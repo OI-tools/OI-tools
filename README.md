@@ -83,6 +83,20 @@ python2 -m SimpleHTTPServer
 # 有些环境下找不到名叫 python3/python2 的可执行文件，不妨运行 python 试试
 ```
 
+### 贡献
+
+欢迎提交 PR，贡献代码或者提供建议。
+
+1. Fork 本项目
+2. 添加一个 Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit 你的修改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到你的 Branch (`git push origin feature/AmazingFeature`)
+5. 开启一个 Pull Request
+
+本项目使用 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) 作为提交规范。
+
+本项目使用 [Prettier](https://prettier.io/) 作为代码格式化工具。你可以使用 `npm install prettier --global` 来安装 Prettier。请在提交代码前在项目根目录下运行 `prettier . --write` 来格式化代码。
+
 ### 版权声明
 
 除特别注明外，项目中除了代码部分均采用 GPL-3.0 许可证。
