@@ -3,16 +3,16 @@
 <!-- PROJECT SHIELDS -->
 
 <p align="center">
-  <a href="https://github.com/ZnPdCo/OI-tools">
-    <img alt="GitHub followers" src="https://img.shields.io/github/followers/ZnPdCo.svg?style=flat-square"></a>
-  <a href="https://github.com/ZnPdCo/OI-tools">
-    <img alt="GitHub forks" src="https://img.shields.io/github/forks/ZnPdCo/OI-tools.svg?style=flat-square"></a>
-  <a href="https://github.com/ZnPdCo/OI-tools">
-    <img alt="GitHub stars" src="https://img.shields.io/github/stars/ZnPdCo/OI-tools.svg?style=flat-square"></a>
-  <a href="https://github.com/ZnPdCo/OI-tools">
-    <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/ZnPdCo/OI-tools.svg?style=flat-square"></a>
+  <a href="https://github.com/OI-tools/OI-tools">
+    <img alt="GitHub followers" src="https://img.shields.io/github/followers/OI-tools.svg?style=flat-square"></a>
+  <a href="https://github.com/OI-tools/OI-tools">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/OI-tools/OI-tools.svg?style=flat-square"></a>
+  <a href="https://github.com/OI-tools/OI-tools">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/OI-tools/OI-tools.svg?style=flat-square"></a>
+  <a href="https://github.com/OI-tools/OI-tools">
+    <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/OI-tools/OI-tools.svg?style=flat-square"></a>
   <br/>
-  <a href="https://github.com/ZnPdCo/OI-tools">
+  <a href="https://github.com/OI-tools/OI-tools">
     <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"></a>
 </p>
 
@@ -20,7 +20,7 @@
 <br />
 
 <p align="center">
-  <a href="https://github.com/ZnPdCo/OI-tools">
+  <a href="https://github.com/OI-tools/OI-tools">
     <img src="docs/assets/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
@@ -28,14 +28,14 @@
   <p align="center">
     一个开源的 OI 在线工具箱去快速开始你的编码！
     <br />
-    <a href="https://znpdco.github.io/OI-tools/"><strong>开始使用 »</strong></a>
+    <a href="https://oi-tools.github.io/OI-tools/"><strong>开始使用 »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ZnPdCo/OI-tools/pulls">提交贡献</a>
+    <a href="https://github.com/OI-tools/OI-tools/pulls">提交贡献</a>
     ·
-    <a href="https://github.com/ZnPdCo/OI-tools/issues">报告 Bug</a>
+    <a href="https://github.com/OI-tools/OI-tools/issues">报告 Bug</a>
     ·
-    <a href="https://github.com/ZnPdCo/OI-tools/issues">提出新特性</a>
+    <a href="https://github.com/OI-tools/OI-tools/issues">提出新特性</a>
   </p>
 
 </p>
@@ -47,7 +47,7 @@
 当然，也可以在本地部署。（**需要安装 Python3**）
 
 ```bash
-git clone https://znpdco.github.io/OI-tools.git --depth=1
+git clone https://oi-tools.github.io/OI-tools.git --depth=1
 
 cd OI-tools
 
@@ -70,7 +70,7 @@ pipenv run mkdocs --help
 可以使用 `gh-pages` 分支的内容
 
 ```bash
-git clone https://znpdco.github.io/OI-tools.git -b gh-pages
+git clone https://oi-tools.github.io/OI-tools.git -b gh-pages
 ```
 
 本地启动一个 http 服务器可能会更方便一些。
