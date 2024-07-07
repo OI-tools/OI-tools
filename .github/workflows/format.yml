@@ -22,15 +22,15 @@ jobs:
       - name: Run remark
         run: remark docs -o
  
+      - name: Check format
+        run: git diff --exit-code
+        continue-on-error: true
+
       - name: Commit files
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -a -m 'Automated format update'
-        continue-on-error: true
-      
-      - name: Check format
-        run: git diff --exit-code
       
       - name: Create Pull Request
         if: ${{ failure() }}
