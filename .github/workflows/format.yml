@@ -20,13 +20,13 @@ jobs:
         run: npm install remark-cli remark-preset-lint-consistent remark-preset-lint-recommended remark-toc --global
  
       - name: Run remark
-        run: find . -path "./docs/assets" -prune -o -type f -name "*.md" -exec remark {} -o \;
+        run: find . -path "./docs/assets" -prune -o -type f -name "*.md" -exec remark -o {} \;
 
       - name: Install js-beautify
         run: npm install js-beautify --global
 
       - name: Run js-beautify
-        run: find . -path "./docs/assets" -prune -o -type f -name "*.js" -exec js-beautify {} -o \;
+        run: find . -path "./docs/assets" -prune -o -type f -name "*.js" -exec js-beautify -o {} \;
  
       - name: Check Format
         id: format
