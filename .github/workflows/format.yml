@@ -1,4 +1,4 @@
-name: Code Format
+name: Check Format
 
 on:
   pull_request:
@@ -6,21 +6,13 @@ jobs:
   format:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Checkout PR
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh pr checkout ${{ github.event.pull_request.number }}
+      - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         name: Setup Node.js
         with:
           node-version: "20.x"
           check-latest: true
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: 3.x
 
       - name: Install prettier
         run: npm install prettier --global
@@ -31,15 +23,3 @@ jobs:
       - name: Check Format
         id: format
         run: git diff --exit-code
-
-      - name: Push changes
-        env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        if: failure()
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add .
-          git commit -m "format" -a
-          git push
-          
