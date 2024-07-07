@@ -3,7 +3,7 @@ name: Code Format
 on: 
   push:
     branches: 
-      - master
+      - main
 jobs:
   format:
     runs-on: ubuntu-latest
