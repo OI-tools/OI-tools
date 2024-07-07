@@ -34,8 +34,6 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           title: '[Bot] Automated PR to fix formatting'
-          body: |
-            Automated PR to fix formatting
           committer: GitHub <noreply@github.com>
           author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           assignees: ZnPdCo
