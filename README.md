@@ -77,4 +77,3 @@ python3 -m http.server
 python2 -m SimpleHTTPServer
 # 有些环境下找不到名叫 python3/python2 的可执行文件，不妨运行 python 试试
 ```
-
