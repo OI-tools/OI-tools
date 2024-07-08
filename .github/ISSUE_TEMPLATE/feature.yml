@@ -4,24 +4,24 @@ title: "[Feature] "
 labels: ["enhancement", "help wanted"]
 
 body:
-- type: markdown
-  attributes:
-    value: 欢迎为 OI tools 提出新的 Issue！烦请填写以下表单：
-- type: textarea
-  id: page
-  attributes:
-    label: 我遇到的问题是
-  validations:
-    required: true
-- type: textarea
-  id: problem
-  attributes:
-    label: 我希望能有这样的解决方案
-  validations:
-    required: true
-- type: textarea
-  id: alternate
-  attributes:
-    label: 我觉得这些备选方案也可以接受
-  validations:
-    required: false
+  - type: markdown
+    attributes:
+      value: 欢迎为 OI tools 提出新的 Issue！烦请填写以下表单：
+  - type: textarea
+    id: page
+    attributes:
+      label: 我遇到的问题是
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 我希望能有这样的解决方案
+    validations:
+      required: true
+  - type: textarea
+    id: alternate
+    attributes:
+      label: 我觉得这些备选方案也可以接受
+    validations:
+      required: false

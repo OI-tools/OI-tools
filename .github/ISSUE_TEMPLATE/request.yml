@@ -4,26 +4,26 @@ title: "[Add] "
 labels: ["ehancement", "help wanted"]
 
 body:
-- type: markdown
-  attributes:
-    value: 欢迎为 OI tools 提出新的 Issue！烦请填写以下表单：
-- type: input
-  id: pagename
-  attributes:
-    label: 页面英文名
-    description: 添加新页面请填写
-    placeholder: sparse-table
-  validations:
-    required: false
-- type: textarea
-  id: page
-  attributes:
-    label: 我希望能添加的内容是
-  validations:
-    required: true
-- type: textarea
-  id: ref
-  attributes:
-    label: 我了解到的相关参考资料有
-  validations:
-    required: false
+  - type: markdown
+    attributes:
+      value: 欢迎为 OI tools 提出新的 Issue！烦请填写以下表单：
+  - type: input
+    id: pagename
+    attributes:
+      label: 页面英文名
+      description: 添加新页面请填写
+      placeholder: sparse-table
+    validations:
+      required: false
+  - type: textarea
+    id: page
+    attributes:
+      label: 我希望能添加的内容是
+    validations:
+      required: true
+  - type: textarea
+    id: ref
+    attributes:
+      label: 我了解到的相关参考资料有
+    validations:
+      required: false
