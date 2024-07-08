@@ -1,6 +1,6 @@
 # 原根 primitive root
 
-计算在 $\bmod p$ 意义下的所有原根。
+计算在 $\bmod p$ 意义下的最小原根。
 
 <div class="grid cards" id="calc" markdown>
 - 输入
