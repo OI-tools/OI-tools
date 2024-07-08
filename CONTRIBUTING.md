@@ -15,7 +15,7 @@ pip install pipenv
 首先，请 Fork 本项目。并执行以下命令克隆到本地：
 
 ```bash
-git clone https://your_username/OI-tools.git
+git clone https://your_username/OI-tools/OI-tools.git
 
 cd OI-tools
 
