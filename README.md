@@ -43,7 +43,7 @@
 
 本项目目前采用 [MkDocs](https://github.com/mkdocs/mkdocs) 及其主题 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 进行渲染。
 
-当然，也可以在本地部署。（需要 [Node.js](https://nodejs.org/)，[Python3](https://www.python.org/)，[Pipenv](https://pipenv.pypa.io/en/latest/) 和 [Git](https://git-scm.com/) 环境）
+当然，也可以在本地部署。（需要 [Node.js 20.x](https://nodejs.org/)，[Python3](https://www.python.org/)，[Pipenv](https://pipenv.pypa.io/en/latest/) 和 [Git](https://git-scm.com/) 环境）
 
 ```bash
 git clone https://github.com/OI-tools/OI-tools.git --depth=1
@@ -87,15 +87,7 @@ python2 -m SimpleHTTPServer
 
 欢迎提交 PR，贡献代码或者提供建议。
 
-1. Fork 本项目
-2. 添加一个 Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit 你的修改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到你的 Branch (`git push origin feature/AmazingFeature`)
-5. 开启一个 Pull Request
-
-本项目使用 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) 作为提交规范。
-
-本项目使用 [Prettier](https://prettier.io/) 作为代码格式化工具。请在提交代码前在项目根目录下运行 `npx prettier . --write` 来格式化代码。
+要参与贡献，请先阅读 [贡献指南](CONTRIBUTING.md)。
 
 ### 版权声明
 
