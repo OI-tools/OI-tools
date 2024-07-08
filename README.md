@@ -23,7 +23,6 @@
   <a href="https://github.com/OI-tools/OI-tools">
     <img src="docs/assets/logo.svg" alt="Logo" width="80" height="80">
   </a>
-
   <h3 align="center">OI Tools</h3>
   <p align="center">
     一个开源的 OI 在线工具箱去快速开始你的编码！
@@ -44,25 +43,26 @@
 
 本项目目前采用 [MkDocs](https://github.com/mkdocs/mkdocs) 及其主题 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 进行渲染。
 
-当然，也可以在本地部署。（**需要安装 Python3**）
+当然，也可以在本地部署。（需要 [Node.js](https://nodejs.org/)，[Python3](https://www.python.org/) 和 [Git](https://git-scm.com/) 环境）
 
 ```bash
 git clone https://oi-tools.github.io/OI-tools.git --depth=1
 
 cd OI-tools
 
-# 安装 mkdocs 以及我们使用的主题 Material for MkDocs
-pip install mkdocs-material
+# 安装依赖
+pip install -r requirements.txt
+npm install
 
 # 两种方法（选其一即可）：
 # 1. 运行一个本地服务器，访问 http://127.0.0.1:8000 可以查看效果
-pipenv run mkdocs serve -v
+mkdocs serve -v
 
 # 2. 在 site 文件夹下得到静态页面
-pipenv run mkdocs build -v
+mkdocs build -v
 
 # 获取 mkdocs 的命令行工具的说明（解释了命令和参数的含义）
-pipenv run mkdocs --help
+mkdocs --help
 ```
 
 ### 离线版
@@ -95,7 +95,7 @@ python2 -m SimpleHTTPServer
 
 本项目使用 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) 作为提交规范。
 
-本项目使用 [Prettier](https://prettier.io/) 作为代码格式化工具。你可以使用 `npm install prettier --global` 来安装 Prettier。请在提交代码前在项目根目录下运行 `prettier . --write` 来格式化代码。
+本项目使用 [Prettier](https://prettier.io/) 作为代码格式化工具。请在提交代码前在项目根目录下运行 `npx prettier . --write` 来格式化代码。
 
 ### 版权声明
 

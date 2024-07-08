@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "prettier": "^3.3.2",
+    "prettier-plugin-zh": "^0.5.2"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-zh"
+    ]
+  }
+}

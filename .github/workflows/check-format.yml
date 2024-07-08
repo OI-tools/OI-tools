@@ -3,7 +3,7 @@ name: Check Format
 on:
   pull_request:
 jobs:
-  format:
+  check-format:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -14,11 +14,11 @@ jobs:
           node-version: "20.x"
           check-latest: true
 
-      - name: Install prettier
-        run: npm install prettier --global
+      - name: Install Packages
+        run: npm install
 
       - name: Run prettier
-        run: prettier . --write
+        run: npx prettier . --write
 
       - name: Check Format
         id: format
