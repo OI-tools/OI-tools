@@ -1,7 +1,7 @@
 name: 添加新内容
 description: 申请添加某个 topic
 title: "[Add] "
-labels: ["ehancement", "help wanted"]
+labels: ["enhancement", "help wanted"]
 
 body:
   - type: markdown
