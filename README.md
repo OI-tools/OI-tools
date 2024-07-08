@@ -43,7 +43,7 @@
 
 本项目目前采用 [MkDocs](https://github.com/mkdocs/mkdocs) 及其主题 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 进行渲染。
 
-当然，也可以在本地部署。（需要 [Node.js](https://nodejs.org/)，[Python3](https://www.python.org/) 和 [Git](https://git-scm.com/) 环境）
+当然，也可以在本地部署。（需要 [Node.js](https://nodejs.org/)，[Python3](https://www.python.org/)，[Pipenv](https://pipenv.pypa.io/en/latest/) 和 [Git](https://git-scm.com/) 环境）
 
 ```bash
 git clone https://oi-tools.github.io/OI-tools.git --depth=1
@@ -51,18 +51,18 @@ git clone https://oi-tools.github.io/OI-tools.git --depth=1
 cd OI-tools
 
 # 安装依赖
-pip install -r requirements.txt
+pipenv install
 npm install
 
 # 两种方法（选其一即可）：
 # 1. 运行一个本地服务器，访问 http://127.0.0.1:8000 可以查看效果
-mkdocs serve -v
+pipenv run mkdocs serve -v
 
 # 2. 在 site 文件夹下得到静态页面
-mkdocs build -v
+pipenv run mkdocs build -v
 
 # 获取 mkdocs 的命令行工具的说明（解释了命令和参数的含义）
-mkdocs --help
+pipenv run mkdocs --help
 ```
 
 ### 离线版
