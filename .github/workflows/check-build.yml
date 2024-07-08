@@ -17,5 +17,6 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material
-      - run: mkdocs build
+      - run: pip install pipenv
+      - run: pipenv install
+      - run: pipenv run mkdocs build
