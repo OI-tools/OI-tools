@@ -46,7 +46,7 @@
 当然，也可以在本地部署。（需要 [Node.js](https://nodejs.org/)，[Python3](https://www.python.org/)，[Pipenv](https://pipenv.pypa.io/en/latest/) 和 [Git](https://git-scm.com/) 环境）
 
 ```bash
-git clone https://oi-tools.github.io/OI-tools.git --depth=1
+git clone https://github.com/OI-tools/OI-tools.git --depth=1
 
 cd OI-tools
 
@@ -70,7 +70,7 @@ pipenv run mkdocs --help
 可以使用 `gh-pages` 分支的内容
 
 ```bash
-git clone https://oi-tools.github.io/OI-tools.git -b gh-pages
+git clone https://github.com/OI-tools/OI-tools.git -b gh-pages
 ```
 
 本地启动一个 http 服务器可能会更方便一些。
