@@ -11,8 +11,8 @@ copyright: "Copyright &copy; 2024 - 2024 ZnPdCo"
 
 theme:
   icon:
-    logo: 'fontawesome/solid/toolbox'
-  favicon: 'fontawesome/solid/toolbox'
+    logo: "fontawesome/solid/toolbox"
+  favicon: "fontawesome/solid/toolbox"
   features:
     - navigation.tabs
     - search.suggest
