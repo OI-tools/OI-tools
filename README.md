@@ -87,7 +87,7 @@ python2 -m SimpleHTTPServer
 
 欢迎提交 PR，贡献代码或者提供建议。
 
-1. Fork本项目
+1. Fork 本项目
 2. 添加一个 Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit 你的修改 (`git commit -m 'Add some AmazingFeature'`)
 4. 推送到你的 Branch (`git push origin feature/AmazingFeature`)
