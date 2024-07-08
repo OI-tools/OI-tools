@@ -21,7 +21,7 @@
 
 <p align="center">
   <a href="https://github.com/OI-tools/OI-tools">
-    <img src="docs/assets/logo.svg" alt="Logo" width="80" height="80">
+    <img src="docs/assets/logo.png" alt="Logo">
   </a>
   <h3 align="center">OI Tools</h3>
   <p align="center">
