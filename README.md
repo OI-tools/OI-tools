@@ -3,7 +3,7 @@
 <!-- PROJECT SHIELDS -->
 
 <p align="center">
-  <a href="https://github.com/OI-tools/OI-tools">
+  <a href="https://github.com/OI-tools">
     <img alt="GitHub followers" src="https://img.shields.io/github/followers/OI-tools.svg?style=flat-square"></a>
   <a href="https://github.com/OI-tools/OI-tools">
     <img alt="GitHub forks" src="https://img.shields.io/github/forks/OI-tools/OI-tools.svg?style=flat-square"></a>
@@ -14,6 +14,8 @@
   <br/>
   <a href="https://github.com/OI-tools/OI-tools">
     <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"></a>
+  <a href="https://github.com/OI-tools/OI-tools">
+    <img alt="license: GPL 3.0" src="https://img.shields.io/badge/license-GPL3.0-blue.svg?style=flat-square"></a>
 </p>
 
 <!-- PROJECT LOGO -->
@@ -30,11 +32,11 @@
     <a href="https://oi-tools.github.io/OI-tools/"><strong>开始使用 »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/OI-tools/OI-tools/pulls">提交贡献</a>
+    <a href="https://github.com/OI-tools/OI-tools/blob/main/CONTRIBUTING.md">提交贡献</a>
     ·
-    <a href="https://github.com/OI-tools/OI-tools/issues">报告 Bug</a>
+    <a href="https://github.com/OI-tools/OI-tools/issues/new?assignees=&labels=bug%2Chelp+wanted&projects=&template=bug.yml&title=%5BBug%5D+">报告 Bug</a>
     ·
-    <a href="https://github.com/OI-tools/OI-tools/issues">提出新特性</a>
+    <a href="https://github.com/OI-tools/OI-tools/issues/new?assignees=&labels=enhancement%2Chelp+wanted&projects=&template=feature.yml&title=%5BFeature%5D+">提出新特性</a>
   </p>
 
 </p>
