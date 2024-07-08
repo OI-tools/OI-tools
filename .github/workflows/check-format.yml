@@ -3,7 +3,7 @@ name: Check Format
 on:
   pull_request:
 jobs:
-  format:
+  check-format:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,7 +18,7 @@ jobs:
         run: npm install
 
       - name: Run prettier
-        run: prettier . --write
+        run: npx prettier . --write
 
       - name: Check Format
         id: format

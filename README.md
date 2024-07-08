@@ -95,7 +95,7 @@ python2 -m SimpleHTTPServer
 
 本项目使用 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) 作为提交规范。
 
-本项目使用 [Prettier](https://prettier.io/) 作为代码格式化工具。请在提交代码前在项目根目录下运行 `prettier . --write` 来格式化代码。
+本项目使用 [Prettier](https://prettier.io/) 作为代码格式化工具。请在提交代码前在项目根目录下运行 `npx prettier . --write` 来格式化代码。
 
 ### 版权声明
 
