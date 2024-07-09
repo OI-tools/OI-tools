@@ -16,6 +16,8 @@
     <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"></a>
   <a href="https://github.com/OI-tools/OI-tools">
     <img alt="license: GPL 3.0" src="https://img.shields.io/badge/license-GPL3.0-blue.svg?style=flat-square"></a>
+  <a href="https://github.com/OI-tools/OI-tools">
+    <img alt="Repobeats analytics image" src="https://repobeats.axiom.co/api/embed/f359c8cab4e13606e60f24d52b64c1aa085decf6.svg"></a>
 </p>
 
 <!-- PROJECT LOGO -->
