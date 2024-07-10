@@ -40,11 +40,11 @@ theme:
 nav:
   - 首页: index.md
   - 数学:
-      - Berlekamp Massey 算法 bm: math/berlekamp-massey.md
+      - Berlekamp–Massey(BM)算法: math/berlekamp-massey.md
   - 数论:
-      - 素数 prime: number-theory/prime.md
-      - 模意义下的乘法逆元 inverse: number-theory/inverse.md
-      - 原根 primitive root: number-theory/primitive-root.md
+      - 素数: number-theory/prime.md
+      - 逆元: number-theory/inverse.md
+      - 原根: number-theory/primitive-root.md
 
 plugins:
   - search:
