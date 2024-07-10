@@ -1,6 +1,6 @@
 # 原根
 
-计算在模 $p$ 意义下的最小原根。
+给定模数 $p$，计算在模 $p$ 意义下的最小原根。
 
 <div class="grid cards" id="tool" markdown>
 - 输入

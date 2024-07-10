@@ -40,9 +40,9 @@ theme:
 nav:
   - 首页: index.md
   - 数学:
-      - Berlekamp–Massey(BM)算法: math/berlekamp-massey.md
+      - Berlekamp–Massey BM 算法: math/berlekamp-massey.md
   - 数论:
-      - 素数: number-theory/prime.md
+      - 质数: number-theory/prime.md
       - 逆元: number-theory/inverse.md
       - 原根: number-theory/primitive-root.md
 
@@ -84,11 +84,13 @@ markdown_extensions:
       generic: true
 
 extra_javascript:
-  - javascripts/katex.js
   - assets/katex/katex.min.js
   - assets/katex/contrib/auto-render.min.js
-  - javascripts/algo.js
   - assets/jquery/jquery.min.js
+  - javascripts/katex.js
+  - javascripts/general.js
+  - javascripts/math.js
+  - javascripts/number-theory.js
 
 extra_css:
   - assets/katex/katex.min.css

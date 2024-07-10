@@ -1,6 +1,6 @@
 # 逆元
 
-计算 $\dfrac{1}{a} \bmod p$。
+给定原数 $a$ 与模数 $p$，计算 $\dfrac{1}{a} \bmod p$。
 
 <div class="grid cards" id="tool" markdown>
 - 输入
