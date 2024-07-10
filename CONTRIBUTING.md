@@ -10,12 +10,16 @@
 pip install pipenv
 ```
 
+## 查找合适的修改点
+
+你可以在 Issue 页面中查找合适的修改点。如果你是一个新手，可以尝试标有 `good first issue` 的 issue。请注意标有 `working` 的 issue，这表示已经有人在进行这个工作了，不要重复别人的工作。
+
 ## 克隆仓库
 
 首先，请 Fork 本项目。并执行以下命令克隆到本地：
 
 ```bash
-git clone https://your_username/OI-tools/OI-tools.git
+git clone https://github.com/your_username/OI-tools.git
 
 cd OI-tools
 
