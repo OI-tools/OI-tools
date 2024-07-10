@@ -1,9 +1,9 @@
-function register_calc(calc_obj, calc_fn, calc_params, calc_output) {
-  calc_obj
+function register_tool(tool_obj, tool_fn, tool_params, tool_output) {
+  tool_obj
     .find("input, textarea")
     .not("[readonly]")
     .on("input propertychange", function () {
-      calc_output.val(calc_fn(calc_params));
+      tool_output.val(tool_fn(tool_params));
     });
 }
 

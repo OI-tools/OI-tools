@@ -13,7 +13,7 @@
 
 <script>
 window.onload = function() {
-    register_calc($("#calc"), function(params) {
+    register_tool($("#calc"), function(params) {
         a = BigInt(params.a.val()), p = BigInt(params.p.val());
         if(a < 0 || p <= 0) return "参数错误";
         if(p > 1e18) return "超出计算范围";
