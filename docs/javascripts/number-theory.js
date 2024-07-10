@@ -1,12 +1,3 @@
-function register_calc(calc_obj, calc_fn, calc_params, calc_output) {
-  calc_obj
-    .find("input, textarea")
-    .not("[readonly]")
-    .on("input propertychange", function () {
-      calc_output.val(calc_fn(calc_params));
-    });
-}
-
 function pow(a, b, p) {
   res = 1n;
   while (b > 0) {

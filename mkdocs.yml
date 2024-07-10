@@ -12,7 +12,7 @@ copyright: "Copyright &copy; 2024 - 2024 ZnPdCo"
 theme:
   icon:
     logo: "fontawesome/solid/toolbox"
-  favicon: "fontawesome/solid/toolbox"
+  favicon: "assets/favicon.svg"
   features:
     - navigation.tabs
     - search.suggest
@@ -40,13 +40,11 @@ theme:
 nav:
   - 首页: index.md
   - 数学:
-      - 欧几里得算法 gcd: math/gcd.md
-      - 拓展欧几里得算法 exgcd: math/exgcd.md
-      - 模意义下的快速幂 pow: math/pow.md
-      - 模意义下的乘法逆元 inverse: math/inverse.md
-      - 欧拉函数 phi: math/phi.md
-      - 莫比乌斯函数 mu: math/mu.md
-      - 原根 primitive root: math/primitive-root.md
+      - Berlekamp–Massey BM 算法: math/berlekamp-massey.md
+  - 数论:
+      - 质数: number-theory/prime.md
+      - 逆元: number-theory/inverse.md
+      - 原根: number-theory/primitive-root.md
 
 plugins:
   - search:
@@ -86,11 +84,13 @@ markdown_extensions:
       generic: true
 
 extra_javascript:
-  - javascripts/katex.js
   - assets/katex/katex.min.js
   - assets/katex/contrib/auto-render.min.js
-  - javascripts/algo.js
   - assets/jquery/jquery.min.js
+  - javascripts/katex.js
+  - javascripts/general.js
+  - javascripts/math.js
+  - javascripts/number-theory.js
 
 extra_css:
   - assets/katex/katex.min.css

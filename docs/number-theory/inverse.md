@@ -1,8 +1,8 @@
-# 模意义下的乘法逆元 inverse
+# 逆元
 
-计算 $\dfrac{1}{a} \bmod p$。
+给定原数 $a$ 与模数 $p$，计算 $\dfrac{1}{a} \bmod p$。
 
-<div class="grid cards" id="calc" markdown>
+<div class="grid cards" id="tool" markdown>
 - 输入
     <input class="md-input md-input--stretch" id="input-a" type="number" placeholder="原数">
     <br><br>
@@ -13,7 +13,7 @@
 
 <script>
 window.onload = function() {
-    register_calc($("#calc"), function(params) {
+    register_tool($("#tool"), function(params) {
         a = BigInt(params.a.val()), p = BigInt(params.p.val());
         if(a < 0 || p <= 0) return "参数错误";
         if(p > 1e18) return "超出计算范围";
