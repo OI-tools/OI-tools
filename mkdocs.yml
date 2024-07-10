@@ -12,7 +12,7 @@ copyright: "Copyright &copy; 2024 - 2024 ZnPdCo"
 theme:
   icon:
     logo: "fontawesome/solid/toolbox"
-  favicon: "fontawesome/solid/toolbox"
+  favicon: "assets/favicon.svg"
   features:
     - navigation.tabs
     - search.suggest
@@ -39,6 +39,8 @@ theme:
 
 nav:
   - 首页: index.md
+  - 数学:
+      - Berlekamp Massey 算法 bm: math/berlekamp-massey.md
   - 数论:
       - 素数 prime: number-theory/prime.md
       - 模意义下的乘法逆元 inverse: number-theory/inverse.md
