@@ -39,14 +39,10 @@ theme:
 
 nav:
   - 首页: index.md
-  - 数学:
-      - 欧几里得算法 gcd: math/gcd.md
-      - 拓展欧几里得算法 exgcd: math/exgcd.md
-      - 模意义下的快速幂 pow: math/pow.md
-      - 模意义下的乘法逆元 inverse: math/inverse.md
-      - 欧拉函数 phi: math/phi.md
-      - 莫比乌斯函数 mu: math/mu.md
-      - 原根 primitive root: math/primitive-root.md
+  - 数论:
+      - 素数 prime: number-theory/prime.md
+      - 模意义下的乘法逆元 inverse: number-theory/inverse.md
+      - 原根 primitive root: number-theory/primitive-root.md
 
 plugins:
   - search:
