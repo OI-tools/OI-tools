@@ -45,6 +45,8 @@ nav:
       - 质数: number-theory/prime.md
       - 逆元: number-theory/inverse.md
       - 原根: number-theory/primitive-root.md
+  - 图论:
+      - 图论工具: graph/graph.md
 
 plugins:
   - search:
@@ -87,6 +89,7 @@ extra_javascript:
   - assets/katex/katex.min.js
   - assets/katex/contrib/auto-render.min.js
   - assets/jquery/jquery.min.js
+  - assets/VivaGraphJS/vivagraph.min.js
   - javascripts/katex.js
   - javascripts/general.js
   - javascripts/math.js
@@ -94,3 +97,4 @@ extra_javascript:
 
 extra_css:
   - assets/katex/katex.min.css
+  - stylesheets/textarea.css
