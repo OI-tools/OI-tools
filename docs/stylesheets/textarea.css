@@ -1,0 +1,7 @@
+textarea {
+  border: 0;
+  outline: none;
+  font-feature-settings: "kern", "liga";
+  color: var(--md-typeset-color);
+  font-family: var(--md-text-font-family);
+}
