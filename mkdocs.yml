@@ -98,3 +98,6 @@ extra_javascript:
 extra_css:
   - assets/katex/katex.min.css
   - stylesheets/textarea.css
+
+hooks:
+  - hooks/add-extra.py

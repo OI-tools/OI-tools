@@ -1,0 +1,13 @@
+#tool #output,
+#tool svg {
+  width: 100% !important;
+  height: 100% !important;
+}
+textarea {
+  min-height: 500px;
+  width: 100%;
+  resize: vertical;
+}
+#output {
+  background-color: #f8f8f8;
+}
