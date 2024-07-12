@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://oi-tools.github.io/OI-tools/</loc>
+         <lastmod>2024-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://oi-tools.github.io/OI-tools/graph/graph/</loc>
+         <lastmod>2024-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://oi-tools.github.io/OI-tools/math/berlekamp-massey/</loc>
+         <lastmod>2024-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://oi-tools.github.io/OI-tools/number-theory/inverse/</loc>
+         <lastmod>2024-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://oi-tools.github.io/OI-tools/number-theory/prime/</loc>
+         <lastmod>2024-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://oi-tools.github.io/OI-tools/number-theory/primitive-root/</loc>
+         <lastmod>2024-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
